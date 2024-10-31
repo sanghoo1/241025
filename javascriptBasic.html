@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <title>JavascriptBasic</title>
+  <style>
+    body{
+      background-color: bisque;
+    }
+  </style>
+  <!-- 내부 선언 1 -->
+   <script type="text/javascript">
+    // 스크립트 주석 한 줄 주석
+    // type 속성은 xml, xhtml 방식일 때 필수이나 html5에선 없는 게 기본
+    // 리액트에서는 type 속성 필수
+    /* 
+      스크립트의 여러 줄 주석 처리
+       document.querySelector('body').innerHTML = 'hello JavaScript !';
+     JS 작성시 주의사항
+     head 영역 에서 DOM을 불러오기 전에 작성시 문서 준비 이벤트 필요 스크립트가 실행이 된 다음 body태그가 오기때문이다.
+
+    */
+   
+   </script>
+  <!-- 외부 선언 2 
+    defer -html 속성 / 작성시 스크립트 내부에 문서 준비 이벤트 불필요 
+  -->
+  <script defer src="./javascriptBasic.js" ></script>
+</head>
+<body>
+  <!-- 내부 선언 2 
+   <script>
+    DOM을 다 불러온 다음 JS 실행
+     document.querySelector('body').innerHTML = 'hello JavaScript !';
+   </script>
+  -->
+  <!-- 외부 선언 1 
+   <script src="./javascriptBasic.js"></script>
+  -->
+</body>
+</html>
